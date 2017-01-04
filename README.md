@@ -5,20 +5,28 @@ An simple vuejs 2 binding for clipboard.js
 ## Usage
 
 ```html
-<template id="temp">
-  <div>
-    <input type="text" v-model="message">
-    <button v-clipboard:copy="message">Copy</button>
+<div id="app"></div>
+
+<template id="t">
+  <div class="container">
+	<input type="text" v-model="message">
+	<button type="button" v-clipboard:copy="message">Copy!</button>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
+new Vue({
+  el: '#app',
+  template: '#t',
+  data: function () {
     return {
-      message: 'Hello, World'
+      message: 'Copy These Text'
     }
   }
-}
+})
 </script>
 ```
+
+### License
+
+[MIT License](LICENSE)
