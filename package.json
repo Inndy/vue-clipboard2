@@ -1,0 +1,28 @@
+{
+  "name": "vue-clipboard2",
+  "version": "0.0.1",
+  "description": "A Vuejs2 binding for clipboard.js",
+  "main": "vue-clipboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inndy/vue-clipboard2.git"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "clipboard",
+    "clipboard.js"
+  ],
+  "author": "Inndy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inndy/vue-clipboard2/issues"
+  },
+  "homepage": "https://github.com/Inndy/vue-clipboard2#readme",
+  "dependencies": {
+    "vue": "2"
+  }
+}
