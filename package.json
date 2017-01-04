@@ -1,10 +1,11 @@
 {
   "name": "vue-clipboard2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vuejs2 binding for clipboard.js",
   "main": "vue-clipboard.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/browserify browserify-me.js -o dist/vue-clipboard.js && $(npm bin)/uglifyjs dist/vue-clipboard.js -o dist/vue-clipboard.min.js && echo Success"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,11 @@
   },
   "homepage": "https://github.com/Inndy/vue-clipboard2#readme",
   "dependencies": {
+    "clipboard": "^1.5.16",
     "vue": "2"
+  },
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "uglify-js": "^2.7.5"
   }
 }

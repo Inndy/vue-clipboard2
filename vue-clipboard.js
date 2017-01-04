@@ -28,7 +28,4 @@ if (typeof exports == "object") {
   define([], function() {
     return VueClipboard
   })
-} else if (window.Vue) {
-  window.VueClipboard = VueClipboard
-  Vue.use(VueClipboard)
 }
