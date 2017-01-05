@@ -2,6 +2,10 @@
 
 An simple vuejs 2 binding for clipboard.js
 
+## Install
+
+`npm install --save vue-clipboard2` or use `dist/vue-clipboard.js` without webpack
+
 ## Usage
 
 ```html
