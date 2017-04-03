@@ -1,6 +1,6 @@
 # vue-clipboard2
 
-An simple vuejs 2 binding for clipboard.js
+A simple vuejs 2 binding for clipboard.js
 
 ## Install
 
