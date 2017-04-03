@@ -13,8 +13,8 @@ An simple vuejs 2 binding for clipboard.js
 
 <template id="t">
   <div class="container">
-	<input type="text" v-model="message">
-	<button type="button" v-clipboard:copy="message">Copy!</button>
+  <input type="text" v-model="message">
+  <button type="button" v-clipboard:copy="message">Copy!</button>
   </div>
 </template>
 
