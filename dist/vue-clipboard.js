@@ -759,19 +759,35 @@ var VueClipboard = {
   install: function (Vue) {
     Vue.directive('clipboard', {
       bind: function (el, binding, vnode) {
-        const clipboard = new Clipboard(el, {
-          text: function () { return binding.value },
-          action: function () { return binding.arg === 'cut' ? 'cut' : 'copy' }
-        })
-        el._v_clipboard = clipboard
+        if(binding.arg === 'success') {
+          el._v_clipboard_success = binding.value
+        } else {
+          const clipboard = new Clipboard(el, {
+            text: function () { return binding.value },
+            action: function () { return binding.arg === 'cut' ? 'cut' : 'copy' }
+          })
+          clipboard.on('success', function (e) {
+            var callback = el._v_clipboard_success
+            callback && callback(e)
+          })
+          el._v_clipboard = clipboard
+        }
       },
       update: function (el, binding) {
-        el._v_clipboard.text = function () { return binding.value },
+        if(binding.arg === 'success') {
+          el._v_clipboard_success = binding.value
+        } else {
+          el._v_clipboard.text = function () { return binding.value }
           el._v_clipboard.action = function () { return binding.arg === 'cut' ? 'cut' : 'copy' }
+        }
       },
       unbind: function (el, binding) {
-        el._v_clipboard.destroy()
-        delete el._v_clipboard
+        if(binding.arg === 'success') {
+          delete el._v_clipboard_success
+        } else {
+          el._v_clipboard.destroy()
+          delete el._v_clipboard
+        }
       }
     })
   }
