@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue-clipboard2 sample app</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
+  <script src="dist/vue-clipboard.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+
+  <template id="t">
+    <div class="container">
+    <input type="text" v-model="message">
+    <button type="button"
+      v-clipboard:copy="message"
+      v-clipboard:success="done">Copy!</button>
+    </div>
+  </template>
+
+  <script>
+  new Vue({
+    el: '#app',
+    template: '#t',
+    data: function () {
+      return {
+        message: 'Copy These Text'
+      }
+    },
+    methods: {
+      done: function () {
+        alert('Copied!')
+      }
+    }
+  })
+  </script>
+</body>
+</html>
