@@ -762,7 +762,7 @@ var VueClipboard = {
         if(binding.arg === 'success') {
           el._v_clipboard_success = binding.value
         } else {
-          const clipboard = new Clipboard(el, {
+          var clipboard = new Clipboard(el, {
             text: function () { return binding.value },
             action: function () { return binding.arg === 'cut' ? 'cut' : 'copy' }
           })
