@@ -1,6 +1,6 @@
 {
   "name": "vue-clipboard2",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Vuejs2 binding for clipboard.js",
   "main": "vue-clipboard.js",
   "scripts": {
