@@ -61,6 +61,10 @@ new Vue({
 </script>
 ```
 
+### Contribution
+
+PRs welcome, and issues aswell! If you want any feature that we don't have currently, please create a issue for feature request.
+
 ### License
 
 [MIT License](LICENSE)
