@@ -757,6 +757,25 @@ var Clipboard = require('clipboard')
 
 var VueClipboard = {
   install: function (Vue) {
+    Vue.prototype.$copyText = function (text) {
+      return new Promise(function (resolve, reject) {
+        var fake_el = document.createElement('button');
+        var clipboard = new Clipboard(fake_el, {
+          text: function () { return text },
+          action: function () { return 'copy' }
+        });
+        clipboard.on('success', function (e) {
+          clipboard.destroy();
+          resolve(e);
+        });
+        clipboard.on('error', function (e) {
+          clipboard.destroy();
+          reject(e);
+        });
+        fake_el.click();
+      });
+    };
+
     Vue.directive('clipboard', {
       bind: function (el, binding, vnode) {
         if(binding.arg === 'success') {
