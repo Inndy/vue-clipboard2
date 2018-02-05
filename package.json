@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Inndy/vue-clipboard2#readme",
   "dependencies": {
-    "clipboard": "^1.5.16",
+    "clipboard": "^1.7.1",
     "vue": "^2.0.0"
   },
   "devDependencies": {
