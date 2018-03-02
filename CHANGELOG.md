@@ -1,3 +1,15 @@
+# 0.0.9
+
+Upgrade dependency package version
+
+# 0.0.8
+
+Change vue dependency version to ^2.0.0
+
+# 0.0.7
+
+Add method: this.$copyText
+
 # 0.0.6
 
 Add error handler `v-clipboard:error`
