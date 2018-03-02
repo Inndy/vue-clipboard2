@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/Inndy/vue-clipboard2#readme",
   "dependencies": {
-    "clipboard": "^1.5.16",
+    "clipboard": "^2.0.0",
     "vue": "^2.0.0"
   },
   "devDependencies": {
-    "browserify": "^13.3.0",
-    "uglify-js": "^2.7.5"
+    "browserify": "^16.1.0",
+    "uglify-js": "^3.3.12"
   }
 }
