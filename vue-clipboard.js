@@ -1,4 +1,4 @@
-var Clipboard = require('clipboard')
+var Clipboard = require('clipboard/dist/clipboard.min.js') // FIXME: workaround for browserify
 
 var VueClipboard = {
   install: function (Vue) {
