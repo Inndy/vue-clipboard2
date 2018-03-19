@@ -20,12 +20,13 @@ var Clipboard = require('clipboard/dist/clipboard.min.js') // FIXME: workaround 
 
 var VueClipboard = {
   install: function (Vue) {
-    Vue.prototype.$copyText = function (text) {
+    Vue.prototype.$copyText = function (text, container) {
       return new Promise(function (resolve, reject) {
         var fake_el = document.createElement('button');
         var clipboard = new Clipboard(fake_el, {
           text: function () { return text },
-          action: function () { return 'copy' }
+          action: function () { return 'copy' },
+          container: typeof container === 'object' ? container : document.body
         });
         clipboard.on('success', function (e) {
           clipboard.destroy();

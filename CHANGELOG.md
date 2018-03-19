@@ -1,3 +1,7 @@
+# 0.1.0
+
+Add support for `contianer` option from `clipboard.js` v1.7.0, thanks robmazur
+
 # 0.0.9
 
 Upgrade dependency package version
