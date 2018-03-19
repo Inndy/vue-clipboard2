@@ -3,3 +3,7 @@ sample-app
 sample.html
 sample2.html
 yarn.lock
+
+# GitHub pages
+CNAME
+_config.yml
