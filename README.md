@@ -69,12 +69,14 @@ Modern browser have some limiation like that you can't use `window.open` without
 So there's a same restriction on copy things! Test it before you use it. Make sure you are not
 using this method inside any async method.
 
-Use it before reading [this issue](https://github.com/zenorocha/clipboard.js/issues/218) and
-[this page](https://github.com/zenorocha/clipboard.js/wiki/Known-Limitations).
+Before using this feature, reading
+[this issue](https://github.com/zenorocha/clipboard.js/issues/218) and
+[this page](https://github.com/zenorocha/clipboard.js/wiki/Known-Limitations) first.
 
 ### Contribution
 
-PRs welcome, and issues aswell! If you want any feature that we don't have currently, please create a issue for feature request.
+PRs welcome, and issues aswell! If you want any feature that we don't have currently,
+please fire a issue for feature request.
 
 ### License
 
