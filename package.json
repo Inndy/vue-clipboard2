@@ -23,9 +23,11 @@
     "url": "https://github.com/Inndy/vue-clipboard2/issues"
   },
   "homepage": "https://github.com/Inndy/vue-clipboard2#readme",
-  "dependencies": {
-    "clipboard": "^2.0.0",
+  "peerDependecies": {
     "vue": "^2.0.0"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "^16.1.0",
