@@ -25,6 +25,20 @@ For standalone usage:
 <script src="dist/vue-clipboard.min.js"></script>
 ```
 
+## I want to copy texts without a specific button!
+
+Yes, you can do it by using our new method: `this.$copyText`. See
+[sample2](https://github.com/Inndy/vue-clipboard2/blob/master/sample2.html),
+where we replace the clipboard directives with a v-on directive.
+
+Modern browsers have some limitations like that you can't use `window.open` without a user interaction.
+So there's the same restriction on copying things! Test it before you use it. Make sure you are not
+using this method inside any async method.
+
+Before using this feature, read:
+[this issue](https://github.com/zenorocha/clipboard.js/issues/218) and
+[this page](https://github.com/zenorocha/clipboard.js/wiki/Known-Limitations) first.
+
 ## Sample
 
 ```html
@@ -60,12 +74,6 @@ new Vue({
 })
 </script>
 ```
-
-## I want to copy texts without a specific button!
-
-Yes, you can do it by using our new method: `this.$copyText`. See
-[sample2](https://github.com/Inndy/vue-clipboard2/blob/master/sample2.html),
-where we replace the clipboard directives with a v-on directive.
 
 ## Sample 2
 
@@ -109,14 +117,6 @@ You can use [your Vue instance ```vm.$el```](https://vuejs.org/v2/api/#vm-el) to
 ```this.$el.children[1].children[2].textContent```
 
 This will allow you to access the *rendered* content of your components, rather than the components themselves.
-
-Modern browsers have some limitations like that you can't use `window.open` without a user interaction.
-So there's the same restriction on copying things! Test it before you use it. Make sure you are not
-using this method inside any async method.
-
-Before using this feature, read:
-[this issue](https://github.com/zenorocha/clipboard.js/issues/218) and
-[this page](https://github.com/zenorocha/clipboard.js/wiki/Known-Limitations) first.
 
 ### Contribution
 
