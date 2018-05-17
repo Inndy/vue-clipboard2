@@ -63,7 +63,9 @@ new Vue({
 
 ## I want to copy texts without a specific button!
 
-Yes, you can do it by using our new method: `this.$copyText`. See [sample2](sample2.html), where we replace the clipboard directives with a v-on directive.
+Yes, you can do it by using our new method: `this.$copyText`. See
+[sample2](https://github.com/Inndy/vue-clipboard2/blob/master/sample2.html),
+where we replace the clipboard directives with a v-on directive.
 
 ## Sample 2
 
@@ -123,4 +125,4 @@ please fire an issue for a feature request.
 
 ### License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/Inndy/vue-clipboard2/blob/master/LICENSE)
