@@ -1,3 +1,8 @@
+# 0.1.1
+
+- Move vue to peerDependency
+- Fix links in npmjs page
+
 # 0.1.0
 
 Add support for `contianer` option from `clipboard.js` v1.7.0, thanks robmazur
