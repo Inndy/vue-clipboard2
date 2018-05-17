@@ -104,7 +104,9 @@ Yes, you can do it by using our new method: `this.$copyText`. See [sample2](samp
 
 You can use [your Vue instance ```vm.$el```](https://vuejs.org/v2/api/#vm-el) to get DOM elements via the usual traversal methods, e.g.:
 
-```this.$el.children[1].children[2]```
+```this.$el.children[1].children[2].textContent```
+
+This will allow you to access the *rendered* content of your components, rather than the components themselves.
 
 Modern browsers have some limitations like that you can't use `window.open` without a user interaction.
 So there's the same restriction on copying things! Test it before you use it. Make sure you are not
