@@ -11,7 +11,7 @@ A simple vuejs 2 binding for clipboard.js
 For vue-cli user:
 
 ```javascript
-import Vue
+import Vue from 'vue'
 import VueClipboard from 'vue-clipboard2'
 
 Vue.use(VueClipboard)
