@@ -39,6 +39,15 @@ Before using this feature, read:
 [this issue](https://github.com/zenorocha/clipboard.js/issues/218) and
 [this page](https://github.com/zenorocha/clipboard.js/wiki/Known-Limitations) first.
 
+## It doesn't work with bootstrap modals
+
+See [clipboardjs](https://clipboardjs.com/#advanced-usage) document and [this pull request](https://github.com/Inndy/vue-clipboard2/pull/23), `container` option is available like this:
+
+```js
+let container = this.$refs.container
+this.$copyText("Text to copy", container)
+```
+
 ## Sample
 
 ```html
