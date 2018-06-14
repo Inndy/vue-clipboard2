@@ -1,7 +1,12 @@
 var Clipboard = require('clipboard/dist/clipboard.min.js') // FIXME: workaround for browserify
 
+var VueClipboardConfig = {
+  autoSetContainer: false
+};
+
 var VueClipboard = {
   install: function (Vue) {
+    Vue.prototype.$clipboardConfig = VueClipboardConfig;
     Vue.prototype.$copyText = function (text, container) {
       return new Promise(function (resolve, reject) {
         var fake_el = document.createElement('button');
@@ -31,7 +36,8 @@ var VueClipboard = {
         } else {
           var clipboard = new Clipboard(el, {
             text: function () { return binding.value },
-            action: function () { return binding.arg === 'cut' ? 'cut' : 'copy' }
+            action: function () { return binding.arg === 'cut' ? 'cut' : 'copy' },
+            container: VueClipboardConfig.autoSetContainer ? el : undefined
           })
           clipboard.on('success', function (e) {
             var callback = el._v_clipboard_success
@@ -65,7 +71,8 @@ var VueClipboard = {
         }
       }
     })
-  }
+  },
+  config: VueClipboard
 }
 
 if (typeof exports == "object") {
