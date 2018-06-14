@@ -3,6 +3,8 @@ sample-app
 sample.html
 sample2.html
 yarn.lock
+.editorconfig
+Makefile
 
 # GitHub pages
 CNAME
