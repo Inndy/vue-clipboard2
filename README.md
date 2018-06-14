@@ -48,6 +48,16 @@ let container = this.$refs.container
 this.$copyText("Text to copy", container)
 ```
 
+Or you can let `vue-clipboard2` set `container` to current element by doing this:
+
+```js
+import Vue from 'vue'
+import VueClipboard from 'vue-clipboard2'
+
+VueClipboard.config.autoSetContainer = true // add this line
+Vue.use(VueClipboard)
+```
+
 ## Sample
 
 ```html

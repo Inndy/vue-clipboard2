@@ -1,3 +1,7 @@
+# 0.2.0
+
+- Add config option `autoSetContainer`
+
 # 0.1.1
 
 - Move vue to peerDependency
