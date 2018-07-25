@@ -72,7 +72,7 @@ var VueClipboard = {
       }
     })
   },
-  config: VueClipboard
+  config: VueClipboardConfig
 }
 
 if (typeof exports == "object") {
