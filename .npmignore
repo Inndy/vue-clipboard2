@@ -5,6 +5,7 @@ sample2.html
 yarn.lock
 .editorconfig
 Makefile
+CHANGELOG.md
 
 # GitHub pages
 CNAME
