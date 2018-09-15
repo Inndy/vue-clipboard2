@@ -1,5 +1,6 @@
 node_modules
 samples
+# yarn.lock should be ignored -> https://github.com/yarnpkg/yarn/issues/5406
 yarn.lock
 .editorconfig
 Makefile
