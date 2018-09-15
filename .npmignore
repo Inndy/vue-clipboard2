@@ -1,7 +1,5 @@
 node_modules
-sample-app
-sample.html
-sample2.html
+samples
 yarn.lock
 .editorconfig
 Makefile

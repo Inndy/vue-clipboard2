@@ -28,7 +28,7 @@ For standalone usage:
 ## I want to copy texts without a specific button!
 
 Yes, you can do it by using our new method: `this.$copyText`. See
-[sample2](https://github.com/Inndy/vue-clipboard2/blob/master/sample2.html),
+[sample2](https://github.com/Inndy/vue-clipboard2/blob/master/samples/sample2.html),
 where we replace the clipboard directives with a v-on directive.
 
 Modern browsers have some limitations like that you can't use `window.open` without a user interaction.
