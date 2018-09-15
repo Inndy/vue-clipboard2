@@ -4,8 +4,7 @@
   "description": "A Vuejs2 binding for clipboard.js",
   "main": "vue-clipboard.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "$(npm bin)/browserify browserify-me.js -o dist/vue-clipboard.js && $(npm bin)/uglifyjs dist/vue-clipboard.js -o dist/vue-clipboard.min.js && echo Success"
+    "build": "$(npm bin)/eslint vue-clipboard.js && $(npm bin)/browserify browserify-me.js -o dist/vue-clipboard.js && $(npm bin)/uglifyjs dist/vue-clipboard.js -o dist/vue-clipboard.min.js && echo Success"
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,12 @@
   },
   "devDependencies": {
     "browserify": "^16.1.0",
+    "eslint": ">=5.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": ">=2.13.0",
+    "eslint-plugin-node": ">=7.0.0",
+    "eslint-plugin-promise": ">=4.0.0",
+    "eslint-plugin-standard": ">=4.0.0",
     "uglify-js": "^3.3.12"
   }
 }
