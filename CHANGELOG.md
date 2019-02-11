@@ -1,3 +1,7 @@
+# 0.3.0
+
+- Add config option `appendToBody` to support IE
+
 # 0.2.1
 
 - Fix VueClipboard.config is undefined
