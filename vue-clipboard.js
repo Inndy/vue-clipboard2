@@ -1,7 +1,8 @@
 var Clipboard = require('clipboard/dist/clipboard.min.js') // FIXME: workaround for browserify
 
 var VueClipboardConfig = {
-  autoSetContainer: false
+  autoSetContainer: false,
+  appendToBody: true // This fixes IE, see #50
 }
 
 var VueClipboard = {
@@ -23,7 +24,9 @@ var VueClipboard = {
           clipboard.destroy()
           reject(e)
         })
+        if (VueClipboardConfig.appendToBody) document.body.appendChild(fakeElement)
         fakeElement.click()
+        if (VueClipboardConfig.appendToBody) document.body.removeChild(fakeElement)
       })
     }
 
