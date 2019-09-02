@@ -1,3 +1,7 @@
+# 0.3.1
+
+- Add TypeScript type definiation from @vlad-ro
+
 # 0.3.0
 
 - Add config option `appendToBody` to support IE
