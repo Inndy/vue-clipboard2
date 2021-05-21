@@ -64,6 +64,7 @@ var VueClipboard = {
         }
       },
       unbind: function (el, binding) {
+        if(!el._vClipboard) return
         if (binding.arg === 'success') {
           delete el._vClipboard_success
         } else if (binding.arg === 'error') {
