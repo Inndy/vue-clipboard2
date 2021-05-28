@@ -7,8 +7,9 @@ var VueClipboardConfig = {
 
 var VueClipboard = {
   install: function (Vue) {
-    Vue.prototype.$clipboardConfig = VueClipboardConfig
-    Vue.prototype.$copyText = function (text, container) {
+    var globalPrototype = Vue.version.slice(0, 2) === '3.' ? Vue.config.globalProperties : Vue.prototype
+    globalPrototype.$clipboardConfig = VueClipboardConfig
+    globalPrototype.$copyText = function (text, container) {
       return new Promise(function (resolve, reject) {
         var fakeElement = document.createElement('button')
         var clipboard = new Clipboard(fakeElement, {
