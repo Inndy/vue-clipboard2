@@ -64,6 +64,7 @@ var VueClipboard = {
         }
       },
       unbind: function (el, binding) {
+        // FIXME: investigate why $element._vClipboard was missing
         if(!el._vClipboard) return
         if (binding.arg === 'success') {
           delete el._vClipboard_success
