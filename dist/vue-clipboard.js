@@ -4,7 +4,7 @@ var VueClipboard = require('./vue-clipboard.js')
 
 global.VueClipboard = VueClipboard
 
-window.Vue && global.Vue.use(VueClipboard)
+window.Vue && window.Vue.use && window.Vue.use(VueClipboard)
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./vue-clipboard.js":3}],2:[function(require,module,exports){
