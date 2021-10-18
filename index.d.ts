@@ -6,7 +6,7 @@ declare module 'vue-clipboard2' {
         autoSetContainer: boolean,
         appendToBody: boolean
       }
-      $copyText(text: string, container?: object | HTMLElement): Promise<{
+      $copyText(text: string, container?: object | HTMLElement | null): Promise<{
         action: string,
         text: string,
         trigger: String | HTMLElement | HTMLCollection | NodeList,
