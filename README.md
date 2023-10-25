@@ -2,6 +2,17 @@
 
 A simple vuejs 2 binding for clipboard.js
 
+## DEPRECATED
+
+I'm so grateful for all of you who have used and supported this project over the years.
+It's been a fun ride, but it's time to say goodbye.
+
+As of 2023, Vue2 is on its way out and the
+[Clipboard API](https://caniuse.com/?search=clipboard.writeText) is now pretty much everywhere.
+
+So you don't need this plugin anymore, just use `navigator.clipboard.writeText('text')`
+and you're good to go. Thanks again for everything and happy coding!
+
 ## Install
 
 `npm install --save vue-clipboard2` or use `dist/vue-clipboard.min.js` without webpack
